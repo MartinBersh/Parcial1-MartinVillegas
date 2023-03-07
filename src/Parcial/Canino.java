@@ -1,26 +1,13 @@
 package Parcial;
 
-public class Canino extends Mamifero{
+abstract public class Canino extends Mamifero{
 
+    protected String color;
+    protected float tamañoColmillos;
 
-
-    @Override
-    public String comer() {
-        return null;
-    }
-
-    @Override
-    public String dormir() {
-        return null;
-    }
-
-    @Override
-    public String correr() {
-        return null;
-    }
-
-    @Override
-    public String comunicarse() {
-        return null;
+    public Canino(String habitad, float altura, float largo, float peso, String nombreCientifico, String color, float tamañoColmillos) {
+        super(habitad, altura, largo, peso, nombreCientifico);
+        this.color = color;
+        this.tamañoColmillos = tamañoColmillos;
     }
 }
